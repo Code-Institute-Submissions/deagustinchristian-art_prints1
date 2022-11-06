@@ -17,10 +17,10 @@
                 Prints on Paper
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="printsonpaper-link">
-                <a href="" class="dropdown-item">Lithographs</a>
-                <a href="" class="dropdown-item">Etchings</a>
-                <a href="" class="dropdown-item">Offsets</a>
-                <a href="" class="dropdown-item">All Prints on Paper</a>
+                <a href="{% url 'products' %}?category=lithographs" class="dropdown-item">Lithographs</a>
+                <a href="{% url 'products' %}?category=etchings" class="dropdown-item">Etchings</a>
+                <a href="{% url 'products' %}?category=offsets" class="dropdown-item">Offsets</a>
+                <a href="{% url 'products' %}?category=lithographs,etchings,offsets" class="dropdown-item">All Prints on Paper</a>
             </div>
         </li>
 
@@ -29,8 +29,8 @@
                 Prints on Canvas
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="printsoncanvas-link">
-                <a href="" class="dropdown-item">Limited Editions</a>
-                <a href="" class="dropdown-item">All Prints on Canvas</a>
+                <a href="{% url 'products' %}?category=limited_editions" class="dropdown-item">Limited Editions</a>
+                <a href="{% url 'products' %}?category=limited_editions" class="dropdown-item">All Prints on Canvas</a>
             </div>
         </li>
 
@@ -39,10 +39,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
