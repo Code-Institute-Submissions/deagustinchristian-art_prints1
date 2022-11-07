@@ -1,0 +1,1 @@
+web: gunicorn art_prints1.wsgi:application
