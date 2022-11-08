@@ -1,1 +1,1 @@
-web: gunicorn art_prints1.wsgi:application
+web: gunicorn art_prints.wsgi:application
